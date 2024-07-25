@@ -1,3 +1,4 @@
+/* navbar start */
 .navbar {
     background-color: #E5E5E5;
     display: flex;
@@ -81,3 +82,50 @@
     background-color: #E5E5E5;
     border: none;
   }
+
+  #hamburger{
+    appearance: none;
+  }
+  label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+  
+    lable{
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s linear;
+      width: 100%;
+      background: #164CA5;
+      position: absolute;
+      top: 70px;
+      left: -100%;
+    }
+    ul li {
+      text-align: center;
+    }
+    ul li {border-radius: 0px !important;
+  }
+  ul a :hover{
+    background: #164CA5;
+  }
+  #hamburger:checked ~ul{
+    left: 0%;
+  }
+
+  }
+  /* navbar end */
+
+  /* body start */
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/background\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  /* body end */
