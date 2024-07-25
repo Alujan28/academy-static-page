@@ -1,0 +1,1 @@
+# academy-static-page
